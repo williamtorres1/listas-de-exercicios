@@ -21,18 +21,6 @@ void mensagens(int situacao_agora, int player, int passos)//irá receber um valor
 			break;
 		}
 		case 5:
-		{
-			break;
-		}
-		case 6:
-		{
-			break;
-		}
-		case 7:
-		{
-			break;
-		}
-		case 8:
 		{	printf("Player %d GANHOU!! PARABÉNS",player);
 			break;
 		}

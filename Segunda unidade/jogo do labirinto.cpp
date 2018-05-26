@@ -4,8 +4,7 @@ void mensagens(int situacao_agora, int player, int passos)//irá receber um valor
 	switch(situacao_agora)
 	{
 		case 1:
-		{
-			printf("Player %d pode dar: %d passos",player,passos);
+		{	printf("Player %d pode dar: %d passos",player,passos);
 			break;
 		}
 		case 2:
@@ -25,4 +24,28 @@ void mensagens(int situacao_agora, int player, int passos)//irá receber um valor
 			break;
 		}
 	}
+}
+char mapa()			//Ainda estou com muitas duvida sobre como  utilizar vetores e matrizes
+{
+	char mapa1[12][12]
+	{
+	'X','X','X','X','X','X','X','X','X','X','X','X',
+	'X','*','*','*','*','*','*','*','*','*','*','X',
+	'X','*','*','*','*','*','*','*','*','*','*','X',	
+	'X','*','*','*','*','*','*','*','*','*','*','X',	
+	'X','*','*','*','*','*','*','*','*','*','*','X',	
+	'X','*','*','*','*','*','*','*','*','*','*','X',
+	'X','*','*','*','*','*','*','*','*','*','*','X',
+	'X','*','*','*','*','*','*','*','*','*','*','X',
+	'X','*','*','*','*','*','*','*','*','*','*','X',
+	'X','*','*','*','*','*','*','*','*','*','*','X',
+	'X','*','*','*','*','*','*','*','*','*','*','X',
+	'X','X','X','X','X','X','X','X','X','X','X','X'
+	}
+	
+}
+int main()
+{
+	
+	return 1;
 }

@@ -3,8 +3,9 @@
 int main()
 {
 	/*
-	A Companhia de Carros Usados João Honesto paga a seus funcionários um salário de R$ 800,00 por mês mais uma comissão de R$ 100,00 por carro vendido
-	 e mais 5% do valor total de suas vendas. Calcular o salário total de um vendedor em um dado mês.
+	A Companhia de Carros Usados Joao Honesto paga a seus funcionarios um salario de R$ 800,00 
+	por mes mais uma comissao de R$ 100,00 por carro vendido
+	 e mais 5% do valor total de suas vendas. Calcular o salario total de um vendedor em um dado mes.
 	*/
 	int v_fixo=800,carros;
 	float comissao,salario_final,vendas;

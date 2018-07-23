@@ -3,12 +3,12 @@
 int main()
 {
 	/*
-	Um sistema de equações lineares da forma
+	Um sistema de equacoes lineares da forma
 	ax + by = c
 	dx + ey = f
-	pode ser resolvido utilizando-se as seguintes fórmulas:
+	pode ser resolvido utilizando-se as seguintes formulas:
 	x=(ce-bf)/(ae-bd)		y=(af-cd)/(ae-bd)
-	Dados os coeficientes (a,b,c,d,e,f) das equações, calcular x e y.
+	Dados os coeficientes (a,b,c,d,e,f) das equacoes, calcular x e y.
 	*/
 	int a,b,d,c,e,f;
 	int x,y;

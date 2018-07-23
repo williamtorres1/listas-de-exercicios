@@ -3,9 +3,10 @@
 int main()
 {	
 	/*
-	Calcular quantos mililitros de água cabem em uma caixa d’água de formato cilíndrico, sabendo-se que suas medidas (diâmetro e altura) são dadas em metros. 
-OBS: Volume = Área da Base X Altura
-          Área da Base = p X Raio2
+	Calcular quantos mililitros de agua cabem em uma caixa d'agua de formato cilindrico, 
+	sabendo-se que suas medidas (diametro e altura) sao dadas em metros. 
+OBS: Volume = area da Base X Altura
+          area da Base = p X Raio2
           1 m3 = 1000 litros
           1 litro = 1000 ml
 	*/

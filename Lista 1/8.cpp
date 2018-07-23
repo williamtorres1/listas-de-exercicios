@@ -3,16 +3,16 @@
 int main()
 {
 	/*
-	Dados o valor do salário mínimo, o número de horas trabalhadas, o número de dependentes e a quantidade de horas extras trabalhadas por um funcionário, 
-	calcular o salário a receber do funcionário de acordo com as regras a seguir:
+	Dados o valor do salario minimo, o numero de horas trabalhadas, o numero de dependentes e a quantidade de horas extras trabalhadas por um funcionario, 
+	calcular o salario a receber do funcionario de acordo com as regras a seguir:
 
-	//O valor da hora trabalhada é igual a 1/10 do salário mínimo;
-	//O salário do mês é igual ao número de horas trabalhadas multiplicado pelo valor da hora trabalhada;
-	//O salário bruto é igual ao salário do mês mais o valor do salário família recebido por cada dependente e mais o valor total recebido pelas horas extras trabalhadas;
-	//O salário família é 5% do salário mínimo;
-	//O valor de uma hora extra trabalhada é igual a uma vez e meia o valor da hora trabalhada;
-	O salário a receber do funcionário (salário líquido) é igual ao salário bruto menos o IRRF;
-	O valor do imposto de renda retido na fonte (IRRF) é de 10% do salário bruto. 
+	//O valor da hora trabalhada e igual a 1/10 do salario minimo;
+	//O salï¿½rio do mï¿½s ï¿½ igual ao nï¿½mero de horas trabalhadas multiplicado pelo valor da hora trabalhada;
+	//O salï¿½rio bruto ï¿½ igual ao salï¿½rio do mï¿½s mais o valor do salï¿½rio famï¿½lia recebido por cada dependente e mais o valor total recebido pelas horas extras trabalhadas;
+	//O salï¿½rio famï¿½lia ï¿½ 5% do salï¿½rio mï¿½nimo;
+	//O valor de uma hora extra trabalhada ï¿½ igual a uma vez e meia o valor da hora trabalhada;
+	O salï¿½rio a receber do funcionï¿½rio (salï¿½rio lï¿½quido) ï¿½ igual ao salï¿½rio bruto menos o IRRF;
+	O valor do imposto de renda retido na fonte (IRRF) ï¿½ de 10% do salï¿½rio bruto. 
 	*/
 	float salario_minimo,horas_trabalhadas,h_extras,IRRF,valor_hora,salario_mes,salario_bruto,salario_extra,salario_familia,salario_liquido;
 	int num_dependentes;

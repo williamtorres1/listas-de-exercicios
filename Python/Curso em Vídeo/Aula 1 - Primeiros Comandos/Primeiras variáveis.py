@@ -1,0 +1,6 @@
+print('='*20)
+nome = input('qual é o seu nome?\n')
+idade = input('Qual é a sua idade?\n')
+peso  = input('qual é o seu peso?\n')
+print(nome,idade,peso)
+print('='*20)

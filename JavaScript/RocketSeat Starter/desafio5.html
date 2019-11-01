@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Desafio 5
+        </title>
+    </head>
+    <body>
+        <script>
+            function exibirHabilidades (usuarios){
+                    for (usuario of usuarios){
+                        console.log("O "+usuario.nome+" Possui as seguintes habilidades: "+usuario.habilidades.join(', '));
+                    }
+            }
+            var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["JavaScript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }];
+            exibirHabilidades(usuarios);       
+        </script>
+    </body>
+</html>

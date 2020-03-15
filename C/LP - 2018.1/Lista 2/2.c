@@ -1,13 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
 int main()
 {
 	/*
-		Num dia de sol, você deseja medir a altura de um prédio, porém, a trena não é suficientemente longa.
-		Assumindo que seja possível medir sua altura, sua sombra e a sombra do prédio no chão, calcule a altura do prédio.
+		Num dia de sol, voce deseja medir a altura de um predio, porem, a trena nao e suficientemente longa.
+		Assumindo que seja possivel medir sua altura, sua sombra e a sombra do predio no chao, calcule a altura do predio.
 	*/
-
-
-	system("pause");
+	printf("Este programa ira calcular a altura do predio :).\n");
+	float alturaPessoa, alturaPredio, sombraPessoa, sombraPredio = 0;
+	printf("Digite a sua altura: ");
+	scanf("%f", &alturaPessoa);
+	printf("Digite a sua sombra: ");
+	scanf("%f", &sombraPessoa);
+	printf("Digite a sombra do predio: ");
+	scanf("%f", &sombraPredio);
+	alturaPredio = sombraPredio * alturaPessoa / sombraPessoa;
+	printf("A Altura do predio e: %2.fm", alturaPredio);
 	return 1;
 }

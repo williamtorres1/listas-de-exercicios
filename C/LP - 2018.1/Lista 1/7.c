@@ -12,7 +12,7 @@ int main()
 	OBS: Devem ser pintadas tambem a base e a tampa dos cilindros.
 	*/
 	float raio,altura;
-	float area_base,area_total,area_lateral;
+	float areaBase,areaTotal,areaLateral;
 	float pi;
 	float latas,tinta_necessaria;
 	float custo_total;
@@ -24,10 +24,10 @@ int main()
 	scanf("%f",&altura);
 	printf("Digite quantos cilindros serao pintados: ");
 	scanf("%d",&QNT_cilindro);
-	area_base=2*(pi*raio*raio);
-	area_lateral=2*pi*raio*altura;
-	area_total=area_lateral+area_base;
-	tinta_necessaria=(area_total*QNT_cilindro/0.3);
+	areaBase=2*(pi*raio*raio);
+	areaLateral=2*pi*raio*altura;
+	areaTotal=areaLateral+areaBase;
+	tinta_necessaria=(areaTotal*QNT_cilindro/0.3);
 	latas=(tinta_necessaria/5);
 	custo_total=45*latas;
 	printf("\nSera preciso de %f Latas e %f reais\n\n",latas,custo_total);

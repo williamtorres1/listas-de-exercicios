@@ -14,24 +14,24 @@ int main()
 	O sal�rio a receber do funcion�rio (sal�rio l�quido) � igual ao sal�rio bruto menos o IRRF;
 	O valor do imposto de renda retido na fonte (IRRF) � de 10% do sal�rio bruto. 
 	*/
-	float salario_minimo,horas_trabalhadas,h_extras,IRRF,valor_hora,salario_mes,salario_bruto,salario_extra,salario_familia,salario_liquido;
-	int num_dependentes;
+	float salarioMinimo,horasTrabalhadas,horasExtras,IRRF,valorHora,salarioMes,salarioBruto,salarioExtra,salarioFamilia,salarioLiquido;
+	int pessoasDependentes;
 	printf("Digite o salario minimo: ");
-	scanf("%f",&salario_minimo);
+	scanf("%f",&salarioMinimo);
 	printf("Digite quantas horas foram trabalhdas: ");
-	scanf("%f",&horas_trabalhadas);
+	scanf("%f",&horasTrabalhadas);
 	printf("Digite o numero de dependentes do salario(salario familia): ");
-	scanf("%d",&num_dependentes);
+	scanf("%d",&pessoasDependentes);
 	printf("Digite quantas horas extras foram trabalhadas: ");
-	scanf("%f",&h_extras);
-	valor_hora=0.1*salario_minimo;
-	salario_mes=horas_trabalhadas*valor_hora;
-	salario_familia=0.05*salario_minimo;
-	salario_extra=valor_hora*1.5*h_extras;
-	salario_bruto=salario_mes+(salario_familia*num_dependentes)+salario_extra;
-	IRRF=0.1*salario_bruto;
-	salario_liquido=salario_bruto-IRRF;
-	printf("\nO salario a receber eh de %f \n",salario_liquido);
+	scanf("%f",&horasExtras);
+	valorHora=0.1*salarioMinimo;
+	salarioMes=horasTrabalhadas*valorHora;
+	salarioFamilia=0.05*salarioMinimo;
+	salarioExtra=valorHora*1.5*horasExtras;
+	salarioBruto=salarioMes+(salarioFamilia*pessoasDependentes)+salarioExtra;
+	IRRF=0.1*salarioBruto;
+	salarioLiquido=salarioBruto-IRRF;
+	printf("\nO salario a receber eh de %f \n",salarioLiquido);
 	system("pause");
 	return 1;
 }

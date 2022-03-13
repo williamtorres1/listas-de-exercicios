@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 int main()
 {
   /*
@@ -23,5 +22,5 @@ int main()
   bmi = weight * 10000 / (height * height);
 
   printf("Seu IMC é: %.2f\n", bmi);
-  return 1;
+  return 0;
 }

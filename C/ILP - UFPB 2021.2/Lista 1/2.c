@@ -26,5 +26,5 @@ int main()
 
   printf("Valores obtidos, todos em metros:\n");
   printf("Circunferência: %.3fm\nRaio: %.3fm\nDiâmetro: %.3fm\nÁrea: %.3fm\n", circumference, radius, diameter, area);
-  return 1;
+  return 0;
 }

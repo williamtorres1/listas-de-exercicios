@@ -16,6 +16,6 @@ int main()
 
   printf("Calculando...\n");
   average = (firstGrade + secondGrade + thirdGrade)/3;
-  printf("A média é: %.3f\n", average);
-  return 1;
+  printf("A média é: %.1f\n", average);
+  return 0;
 }

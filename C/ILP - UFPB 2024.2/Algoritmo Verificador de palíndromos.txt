@@ -1,0 +1,17 @@
+Algoritmo: Verificador de Palíndromos
+
+Var
+palavra, palavra_inversa : literal
+palavra_minuscula : literal
+
+Inicio
+  Escreva("Digite uma palavra: ")
+  Leia(palavra)
+  palavra_minuscula <-- ConversorPalavrasMaiusculasEmMinusculas(palavra)
+  palavra_inversa <-- InversorDePalavras(palavra_minuscula)
+  Se (palavra_inversa == palavra_minuscula) então
+    Escreva("A palavra: " palavra " é um palíndromo!")
+  Senão
+    Escreva("A palavra: " palavra " não é um palíndromo!")
+FimdoAlgoritmo
+

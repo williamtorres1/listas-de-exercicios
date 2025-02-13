@@ -1,0 +1,53 @@
+Algoritmo: IMC
+
+Var
+peso, altura, IMC: real
+nome, resposta : literal
+
+Inicio
+
+resposta <-- s
+    Enquanto (resposta == s) faça
+        Escreva("Digite seu nome: ")
+        Leia(nome)
+        Escreva("Digite seu peso e altura": )
+        Leia(peso, altura)
+
+        IMC <-- peso / (altura * altura)
+
+        Se (IMC <= 18,5) então
+            Escreva("Voce esta abaixo do peso")
+        FimdoSE
+        Se (IMC > 18,5 E IMC < 25) então
+            Escreva("Voce esta no peso ideal")
+        FimdoSE
+        Se (IMC >= 25) então
+            Escreva("Voce esta acima do peso ideal")
+        FimdoSE
+        Escreva("Deseja fazer novo calculo? S ou n")
+        Leia(resposta)
+    FimdoEnquanto
+FimdoAlgoritmo
+
+
+Algoritmo: Par ou Ímpar
+
+Var
+jogador_um, numero_gerado, resto, soma : inteiro
+resposta : literal
+
+Inicio
+	Escreva("Jogador, você escolhe par ou ímpar? ")
+	Leia(resposta)
+	Escreva("Jogador 1, digite um número inteiro, entre 1 e 10: ")
+	Leia(jogador_um)
+	numero_gerado <-- GerarNumeroAleatorioEntre(1, 10)
+	Escreva("O computador escolheu: ", numero_gerado)
+	soma <-- (jogador_um + numero_gerado)
+        resto <-- soma % 2
+        Se (resto == 0 E resposta == 'par' ou resto != 0 e resposta == 'ímpar') então
+        	Escreva("Parabéns, você venceu!")
+        Senão
+        	Escreva("Poxa, você perdeu! :(")
+        FimdoSE
+FimdoAlgoritmo

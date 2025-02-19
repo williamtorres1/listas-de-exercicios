@@ -24,5 +24,6 @@ int main(){
     printf("Caracter inválido!");
     break;
   }
+  putchar('\n');
   return 0;
 }

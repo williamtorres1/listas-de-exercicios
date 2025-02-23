@@ -3,13 +3,13 @@
 int main()
 {
 	/*
-        A média de um aluno em uma disciplina é a média aritmética das notas de suas duas avaliações parciais.
-        Se a média do aluno for maior ou igual a 7 (sete), o aluno está aprovado.
-        Caso a média do aluno seja maior ou igual a 3 (três), ele fará exame final. Se o aluno obtiver média menor que 3,0, ele está reprovado.
-        Faça um programa para ler as notas das duas avaliações parciais e calcular a média de um aluno em uma determinada disciplina
-        e informar a sua situação. O programa deverá exibir a seguinte frase:
+        A mï¿½dia de um aluno em uma disciplina ï¿½ a mï¿½dia aritmï¿½tica das notas de suas duas avaliaï¿½ï¿½es parciais.
+        Se a mï¿½dia do aluno for maior ou igual a 7 (sete), o aluno estï¿½ aprovado.
+        Caso a mï¿½dia do aluno seja maior ou igual a 3 (trï¿½s), ele farï¿½ exame final. Se o aluno obtiver mï¿½dia menor que 3,0, ele estï¿½ reprovado.
+        Faï¿½a um programa para ler as notas das duas avaliaï¿½ï¿½es parciais e calcular a mï¿½dia de um aluno em uma determinada disciplina
+        e informar a sua situaï¿½ï¿½o. O programa deverï¿½ exibir a seguinte frase:
 
-        O aluno obteve média _________ e está ______________.
+        O aluno obteve mï¿½dia _________ e estï¿½ ______________.
 	*/
 
 	system("pause");

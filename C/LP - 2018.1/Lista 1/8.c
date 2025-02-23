@@ -3,16 +3,21 @@
 int main()
 {
 	/*
-	Dados o valor do salario minimo, o numero de horas trabalhadas, o numero de dependentes e a quantidade de horas extras trabalhadas por um funcionario, 
-	calcular o salario a receber do funcionario de acordo com as regras a seguir:
-
-	//O valor da hora trabalhada e igual a 1/10 do salario minimo;
-	//O sal�rio do m�s � igual ao n�mero de horas trabalhadas multiplicado pelo valor da hora trabalhada;
-	//O sal�rio bruto � igual ao sal�rio do m�s mais o valor do sal�rio fam�lia recebido por cada dependente e mais o valor total recebido pelas horas extras trabalhadas;
-	//O sal�rio fam�lia � 5% do sal�rio m�nimo;
-	//O valor de uma hora extra trabalhada � igual a uma vez e meia o valor da hora trabalhada;
-	O sal�rio a receber do funcion�rio (sal�rio l�quido) � igual ao sal�rio bruto menos o IRRF;
-	O valor do imposto de renda retido na fonte (IRRF) � de 10% do sal�rio bruto. 
+	Dados o valor do salário mínimo, o número de horas trabalhadas, o número de
+		dependentes e a quantidade de horas extras trabalhadas por um funcionário, 
+		calcular o salario a receber do funcionário de acordo com as regras a seguir:
+		- O valor da hora trabalhada e igual a 1/10 do salário mínimo;
+		- O salário do mes e igual ao número de horas trabalhadas multiplicado pelo
+			valor da hora trabalhada;
+		- O salário bruto e igual ao salario do mes mais o valor do salário família
+			recebido por cada dependente e mais o valor total recebido pelas horas 
+			extras trabalhadas;
+		- O salário família e 5% do salário minimo;
+		- O valor de uma hora extra trabalhada e igual a uma vez e meia o valor da
+			hora trabalhada;
+		- O salário a receber do funcionário (salário líquido) e igual ao 
+			salário bruto menos o IRRF;
+		- O valor do imposto de renda retido na fonte (IRRF) e de 10% do salário bruto.
 	*/
 	float salarioMinimo,horasTrabalhadas,horasExtras,IRRF,valorHora,salarioMes,salarioBruto,salarioExtra,salarioFamilia,salarioLiquido;
 	int pessoasDependentes;

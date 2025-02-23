@@ -3,12 +3,14 @@
 int main()
 {
 	/*
-	Calcule a quantidade de latas de tinta necessarias e o custo em reais para pintar a area externa de tanques de combustivel cilindricos. 
-	Devem ser informados a altura e o diametro da base desses cilindros, bem como a sua quantidade. 
+	Calcule a quantidade de latas de tinta necessarias e o custo em reais para 
+		pintar a area externa de tanques de combustivel cilindricos. 
+	Devem ser informados a altura e o diametro da base desses cilindros,
+		bem como a sua quantidade. 
 	Assuma que todos os cilindros possuem as mesmas dimensoes e que:
-	Uma lata de tinta custa R$ 45,00;
-	Cada lata contem 5 litros de tinta;
-	Cada litro de tinta pinta 03 metros quadrados.
+		Uma lata de tinta custa R$ 45,00;
+		Cada lata contem 5 litros de tinta;
+		Cada litro de tinta pinta 03 metros quadrados.
 	OBS: Devem ser pintadas tambem a base e a tampa dos cilindros.
 	*/
 	float raio,altura;

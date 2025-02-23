@@ -3,8 +3,8 @@
 int main()
 {
 	/*
-        Faça um programa para ler dois números inteiros quaisquer e decidir qual deles é o maior.
-        Existe a possibilidade dos números serem iguais.
+	FaÃ§a um programa para ler dois nÃºmeros inteiros quaisquer e decidir qual deles
+		Ã© o maior. Existe a possibilidade dos nÃºmeros serem iguais.
 	*/
 
 	system("pause");

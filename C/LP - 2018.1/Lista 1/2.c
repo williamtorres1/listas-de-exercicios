@@ -3,11 +3,12 @@
 int main()
 {	
 	/*
-	Calcular quantos mililitros de agua cabem em uma caixa d'agua de formato cilindrico, 
-	sabendo-se que suas medidas (diametro e altura) sao dadas em metros. 
-OBS: Volume = area da Base X Altura
-          area da Base = p X Raio2
-          1 m3 = 1000 litros
+	Calcular quantos mililitros de agua cabem em uma caixa d'agua de formato 
+		cilindrico, sabendo-se que suas medidas (diametro e altura) sao dadas 
+		em metros. 
+	OBS: Volume = area da Base X Altura
+          área da Base = p X Raio2
+          1 m³ = 1000 litros
           1 litro = 1000 ml
 	*/
 	float volume,areaBase,altura,raio,pi;

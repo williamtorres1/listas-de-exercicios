@@ -3,14 +3,15 @@
 int main()
 {
 	/*
-		VocÍ ir· participar de um rali de regularidade. O rali de regularidade È uma competiÁ„o onde ganha
-		quem mais se aproxima do tempo ideal ao percorrer um determinado circuito.
-		Para facilitar sua vida durante a competiÁ„o, faÁa um programa que solicite a dist‚ncia a ser percorrida (em km)
-		e a velocidade mÈdia a ser utilizada no percurso (em quilÙmetros por hora) e calcule e exiba
-		o tempo que dever· ser gasto no percurso em horas, minutos e segundos.
-
-        OBS: A funÁ„o floor (num) retorna o maior inteiro menor ou igual a num.
-          Exemplo: floor (4.51) = 4. A funÁ„o floor est· na biblioteca math.h.
+		Voc√™ ir√° participar de um rali de regularidade. O rali de regularidade √© uma
+			competi√ß√£o onde ganha quem mais se aproxima do tempo ideal ao percorrer um
+			determinado circuito. Para facilitar sua vida durante a competi√ß√£o, fa√ßa 
+			um programa que solicite a dist√¢ncia a ser percorrida (em km) e a 
+			velocidade m√©dia a ser utilizada no percurso (em quil√¥metros por hora) e
+			calcule e exiba o tempo que dever√° ser gasto no percurso em horas, minutos 
+			e segundos.
+		OBS: A fun√ß√£o floor (num) retorna o maior inteiro menor ou igual a num.
+		Exemplo: floor (4.51) = 4. A fun√ß√£o floor est√° na biblioteca math.h.
 	*/
 
 	system("pause");

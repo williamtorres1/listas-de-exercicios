@@ -3,8 +3,10 @@
 int main()
 {
 	/*
-		Calcular a quantidade de litros de combustivel gastos em uma viagem, utilizando-se um automovel que faz 15 km com um litro. 
-		O cclculo deve ser feito a partir do tempo gasto em horas e da velocidade media durante a viagem em km/h. 
+		Calcular a quantidade de litros de combustivel gastos em uma viagem,
+			utilizando-se um automovel que faz 15 km com um litro. 
+		O calculo deve ser feito a partir do tempo gasto em horas e da velocidade
+			media durante a viagem em km/h. 
 	*/
 	float tempo,velocidadeMedia,litros,space;
 	printf("Qual foi a velocidade media e o tempo gasto na viagem?\n");

@@ -3,8 +3,9 @@
 int main()
 {
 	/*
-        Faça um programa para ler dois números inteiros M e N e determinar se M é divisível por N.
-        Utilize na solução apresentada o seguinte fato: se o resto da divisão de M por N é  0 (zero), então M é divisível por N.
+		FaÃ§a um programa para ler dois nÃºmeros inteiros M e N e determinar se M Ã© 
+			divisÃ­vel por N. Utilize na soluÃ§Ã£o apresentada o seguinte fato: se o 
+			resto da divisÃ£o de M por N Ã© 0 (zero), entÃ£o M Ã© divisÃ­vel por N.
 	*/
 
 	system("pause");

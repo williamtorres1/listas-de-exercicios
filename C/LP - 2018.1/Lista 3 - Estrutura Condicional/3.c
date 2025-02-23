@@ -3,9 +3,9 @@
 int main()
 {
 	/*
-        Faça um programa para, dados os valores dos coeficientes,
-        calcular e exibir o valor da raiz de uma equação do 1º grau da forma AX+B=0.
-        Lembre-se que o valor de A não pode ser zero.
+		FaÃ§a um programa para, dados os valores dos coeficientes, calcular e exibir
+			o valor da raiz de uma equaÃ§Ã£o do 1Âº grau da forma AX+B=0. 
+		Lembre-se que o valor de A nÃ£o pode ser zero
 	*/
 
 	system("pause");

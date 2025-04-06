@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#define STUDENTSNUMBER 3
 
+#define STUDENTSNUMBER 50
+#define NAMESIZE 30
+#define REGISTRYSIZE 10
 typedef enum {
   CURSANDO,
   APROVADO,
@@ -11,8 +13,8 @@ typedef enum {
 } situation;
 
 typedef struct {
-  char name[30];
-  char registry[10];
+  char name[NAMESIZE];
+  char registry[REGISTRYSIZE];
   float examPunctuation[3];
   situation studentSituation;
 } student;
@@ -29,52 +31,87 @@ situation calcPunctuation(float *exam1, float *exam2, float *exam3) {
   else return REPROVADO;
 }
 
-void registryStudent(student *students){
+void registryStudent(student *students, int *registeredStudents){
+  if (*registeredStudents >= STUDENTSNUMBER) {
+    printf("Erro! Número máximo de alunos registrados!");
+    return;
+  }
+  printf("Digite o nome do estudante: ");
+  fgets(students[*registeredStudents].name, NAMESIZE, stdin);
+  printf("Digite a matrícula do estudante: ");
+  fgets(students[*registeredStudents].registry, REGISTRYSIZE, stdin);
+  printf("Digite as três notas do estudante: ");
+  scanf("%f %f %f", 
+    &students[*registeredStudents].examPunctuation[0], 
+    &students[*registeredStudents].examPunctuation[1], 
+    &students[*registeredStudents].examPunctuation[2]
+  );
+  students[*registeredStudents].studentSituation = calcPunctuation(
+    &students[*registeredStudents].examPunctuation[0], 
+    &students[*registeredStudents].examPunctuation[1], 
+    &students[*registeredStudents].examPunctuation[2]
+  );
+  (*registeredStudents)++;
+  clearKeyboardBuffer();
+}
+
+void searchStudentByRegistry(student *students, int *registeredStudents){
   int i;
-  for (i = 0; i < STUDENTSNUMBER; i++){
-    printf("Digite o nome do estudante: ");
-    fgets(students[i].name, 30, stdin);
-    printf("Digite a matrícula do estudante: ");
-    fgets(students[i].registry, 10, stdin);
-    printf("Digite as três notas do estudante: ");
-    scanf("%f %f %f", 
-      &students[i].examPunctuation[0], 
-      &students[i].examPunctuation[1], 
-      &students[i].examPunctuation[2]
-    );
-    clearKeyboardBuffer();
-    students[i].studentSituation = calcPunctuation(
-      &students[i].examPunctuation[0], 
-      &students[i].examPunctuation[1], 
-      &students[i].examPunctuation[2]
-    );
+  char registry[REGISTRYSIZE];
+  printf("Digite a matrícula para procurarmos: ");
+  fgets(registry, REGISTRYSIZE, stdin);
+  for (i = 0; i < *registeredStudents; i++) {
+    if (!(strcmp(students[i].registry, registry))) {
+      printf("\nEstudante %d \nNome: %s \nMatrícula: %s\n", 
+        i+1, 
+        students[i].name,
+        students[i].registry
+      );
+      printf("Notas: %.2f || %.2f || %.2f", students[i].examPunctuation[0],
+        students[i].examPunctuation[1],
+        students[i].examPunctuation[2]
+      );
+      switch (students[i].studentSituation){
+        case APROVADO:
+          printf("Situação: Aprovado.\n");
+          break;
+        case REPROVADO:
+          printf("Situação: Reprovado.\n");
+          break;
+        case FINAL:
+          printf("Situação: Final.\n");
+          break;
+        default:
+          break;
+        }
+      break;
+    }
   }
 }
 
-// void searchStudentByRegistry(){}
-
-void showReport(student *students){
+void showReport(student *students, int *registeredStudents){
   int i;
-  for (i = 0; i < STUDENTSNUMBER ; i++){
-    printf("\nEstudante %d \nNome: %s \nMatrícula: %s", 
+  for (i = 0; i < *registeredStudents ; i++){
+    printf("\nEstudante %d \nNome: %s \nMatrícula: %s\n", 
       i + 1,
       students[i].name,
       students[i].registry
     );
-    printf("Nota I)%.2f II)%.2f III)%.3f\n", 
+    printf("Nota I)%.2f II)%.2f III)%.2f\n", 
       students[i].examPunctuation[0],
       students[i].examPunctuation[1],
       students[i].examPunctuation[2]
     );
-    switch (students[i].studentSituation)
-    {
+    switch (students[i].studentSituation){
     case APROVADO:
       printf("Situação: Aprovado.\n");
       break;
     case REPROVADO:
       printf("Situação: Reprovado.\n");
+      break;
     case FINAL:
       printf("Situação: Final.\n");
+      break;
     default:
       break;
     }
@@ -90,9 +127,33 @@ int main(){
   Dicas: usar typedef struct, pode usar union no caso da situação do aluno, 
     criar array de struct    
   */
-  student students[STUDENTSNUMBER];
-  registryStudent(students);
-  showReport(students);
+  student students[STUDENTSNUMBER] = {0};
+  int escolha = 0, registeredStudents = 0;
+  do {
+    printf("\nDigite o número correspondente a função que deseja executar.");
+    printf("\n1) Verificar relatório de todos os estudantes.");
+    printf("\n2) Registrar novo estudante.");
+    printf("\n3) Buscar aluno por matrícula");
+    printf("\n0) Fechar programa\n");
+    scanf("%d", &escolha);
+    clearKeyboardBuffer();
+    switch (escolha){
+      case 1:
+        showReport(students, &registeredStudents);
+        break;
+      case 2:
+        registryStudent(students, &registeredStudents);
+        break;
+      case 3: 
+        searchStudentByRegistry(students, &registeredStudents);
+        break;
+      case 0:
+        break;
+      default:
+        printf("Opção inválida! Tente novamente.");
+        break;
+    }
+  } while(escolha);
 
   return 0;
 }

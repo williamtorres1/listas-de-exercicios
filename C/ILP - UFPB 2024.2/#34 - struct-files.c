@@ -110,5 +110,6 @@ int main(){
      }
     else return 0;
    }
+   free(alunos);
    return 0;
 }

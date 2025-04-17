@@ -149,5 +149,6 @@ int main() {
         printf("Opção inválida!\n");
     }
   } while (opcao != 3);
+  free(alunos);
   return 0;
 }

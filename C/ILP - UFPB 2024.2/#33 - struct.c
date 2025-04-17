@@ -160,5 +160,6 @@ int main(){
         break;
       }
     } while(escolha);
+    free(produto);
     return 0;
 }

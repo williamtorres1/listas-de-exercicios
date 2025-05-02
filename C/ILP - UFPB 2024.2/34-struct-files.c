@@ -1,5 +1,5 @@
 /***********************************************************
-*   File:    #34 -struct-files.c                           *
+*   File:    34-struct-files.c                              *
 *   Authors: William Torres     || @williamtorres1         *
 *            Laís Viana         || @laisvianamelo          *
 ************************************************************/

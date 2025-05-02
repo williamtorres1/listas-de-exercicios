@@ -2,7 +2,7 @@
 
 Repositório com os códigos em C para as resoluções de exercícios propostos em sala de aula.
 
-1. [**Exercício 1: Dobro do número digitado**](./#1%20-%20hello_world.c).
+1. [**Exercício 1: Dobro do número digitado**](./%231 - hello_world.c).
 
      **Descrição:** Faça um programa que receba um número inteiro pelo usuário
     e apresente o dobro do valor digitado.

@@ -1,5 +1,5 @@
 /***********************************************************
-*   File:    #32 - struct.c                                *
+*   File:    32-struct.c                                   *
 *   Authors: William Torres     || @williamtorres1         *
 *            Laís Viana         || @laisvianamelo          *
 ************************************************************/

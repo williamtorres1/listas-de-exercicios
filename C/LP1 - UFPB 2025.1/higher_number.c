@@ -27,8 +27,6 @@ int main(){
     for (i = 0; i < sizeOfArray; i++) {
       printf("Digite um numero: ");
       scanf("%d", &userNumbers[i]);
-      printf("O número digitado foi: %d e armazenado em %d", userNumbers[i], i);
-      printf("A comparacao se: %d >= %d é %d ", userNumbers[i], higherNumber, (userNumbers[i] >= higherNumber));
       if (userNumbers[i] >= higherNumber)
         higherNumber = userNumbers[i];
     }

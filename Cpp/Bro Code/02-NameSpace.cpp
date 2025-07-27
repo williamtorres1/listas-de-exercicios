@@ -23,11 +23,17 @@ int main(){
   using namespace std;
   cout << second::x << endl;
 
-  text_t firstName = "William";
-  cout << firstName << endl;
-
   number_t age = 24;
   cout << age << endl;
 
+  text_t firstName;
+  // cout << "What's your name?";
+  // std::cin >> firstName;
+  // std::cout << "Hello, " << firstName;
+
+  std::cout << "What's your full name? ";
+  // Captura a string com espaços e limpa o buffer do teclado
+  std::getline(std::cin >> std::ws,firstName);
+  std::cout << "Hello, " << firstName;
   return 0;
 }

@@ -61,26 +61,26 @@ class Invoice {
 };
 
 int main(){
-    Invoice invoice[2];
-    int number;
-    std::string description;
-    int quantity;
-    double price;
-    for (int i = 0; i < 2; i++) {
-        std::cin >> number;
-        std::cin.ignore();
-        invoice[i].setNumber(number);
-        std::getline(std::cin >> std::ws, description);
-        invoice[i].setDescription(description);
-        std::cin >> quantity;
-        std::cin.ignore();
-        invoice[i].setQuantity(quantity);
-        std::cin >> price;
-        invoice[i].setPrice(price);
-        std::cin.ignore();
-    }
-    for (int i = 0; i < 2; i++){
-      invoice[i].printAll();
-    }
-    return 0;
+  Invoice invoice[2];
+  int number;
+  std::string description;
+  int quantity;
+  double price;
+  for (int i = 0; i < 2; i++) {
+    std::cin >> number;
+    std::cin.ignore();
+    invoice[i].setNumber(number);
+    std::getline(std::cin >> std::ws, description);
+    invoice[i].setDescription(description);
+    std::cin >> quantity;
+    std::cin.ignore();
+    invoice[i].setQuantity(quantity);
+    std::cin >> price;
+    invoice[i].setPrice(price);
+    std::cin.ignore();
+  }
+  for (int i = 0; i < 2; i++){
+    invoice[i].printAll();
+  }
+  return 0;
 }

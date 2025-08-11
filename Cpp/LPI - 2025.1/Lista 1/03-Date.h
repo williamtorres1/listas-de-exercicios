@@ -65,7 +65,6 @@ class Date{
             } else if ((this->day + daysToIncrement) > 28){
                 this->day = 1;
                 this->month++;
-                break;
             }
             break;
           }

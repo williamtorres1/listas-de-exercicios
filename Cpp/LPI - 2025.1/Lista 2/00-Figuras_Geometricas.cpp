@@ -99,7 +99,6 @@ class Circulo: public FiguraGeometrica{
     void lerAtributosArea() override{
       std::cin >> raio;
     };
-      
 };
 
 class Quadrado: public FiguraGeometrica{
@@ -133,7 +132,7 @@ int main(){
           figura = new Circulo(tipo); break;}
         default:{
           figura = new Circulo(0); break;}
-      } 
+      }
     figura->lerAtributosArea();
     std::cin.ignore();
     std::cout << figura->getNome() << " de área "<< figura->calcularArea() << std::endl;
